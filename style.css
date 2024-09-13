@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url('https://media.gettyimages.com/id/1359317801/pt/v%C3%ADdeo/abstract-dark-gray-wave-backgrounds-loop.jpg?s=640x640&k=20&c=Bh_R7OWxuxeSpKsneV3f3ts3BqwGnngWnDc8e0rJLIQ=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+
+
+.container {
+    width: 400px; /* Aumentar o tamanho do quadrado */
+    padding: 30px;
+    background-color: #5f778f; /* Cinza mais claro */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 24px; /* Aumentar o tamanho do texto do formulário */
+    margin-bottom: 20px;
+}
+
+/* Estilizar o campo de input */
+input[type="number"] {
+    width: 100%; /* Aumentar a largura do campo de entrada */
+    padding: 15px; /* Aumentar o espaçamento interno */
+    font-size: 18px; /* Aumentar o tamanho do texto */
+    border: 2px solid #000; /* Borda preta */
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.impt {
+    margin-top: 20px;
+}
+
+.impt label {
+    font-size: 20px; /* Aumentar o tamanho do texto do seletor */
+}
+
+.impt select {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px; /* Aumentar o tamanho do texto dentro do seletor */
+    border: 2px solid #000; /* Borda preta */
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.sub input {
+    font-size: 18px; /* Aumentar o tamanho do texto do botão */
+    padding: 12px 30px;
+    border: none;
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.sub input:hover {
+    background-color: #555;
+}
+@keyframes slideDown {
+    from {
+        opacity: 0; /* Começa invisível */
+        transform: translateY(-50px); /* Começa 50px acima da posição final */
+    }
+    to {
+        opacity: 1; /* Fica visível */
+        transform: translateY(0); /* Termina na posição final */
+    }
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.logo img {
+    width: 150px; /* Define a largura do logo */
+    height: auto; /* Mantém a proporção do logo */
+    animation: slideDown 1s ease-out; /* Aplica a animação ao logo */
+}
+@media screen and (max-width: 600px) {
+    .container {
+        width: 90%; /* Aumentar para 90% da largura da tela */
+        padding: 20px;
+    }
+
+    h3 {
+        font-size: 20px; /* Reduzir o tamanho do texto */
+    }
+
+    input[type="number"],
+    .impt select {
+        font-size: 16px; /* Reduzir o tamanho do texto para entradas */
+    }
+
+    .sub input {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        width: 120px; /* Reduzir o tamanho do logo */
+    }
+}
